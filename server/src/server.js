@@ -23,5 +23,8 @@ app.get('/api/my/learning', protect, myLearning);
 app.use((_, res) => res.status(404).json({ message: 'Route not found.' }));
 app.use((err, _, res, __) => res.status(500).json({ message: err.message || 'Server error.' }));
 
-const port = process.env.PORT || 5000;
-connectDB().then(() => app.listen(port, () => console.log(`Learny API running on http://localhost:${port}`))).catch(err => { console.error(err); process.exit(1); });
+connectDB().catch(err => {
+  console.error('MongoDB connection failed:', err);
+});
+
+export default app;

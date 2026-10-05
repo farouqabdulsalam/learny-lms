@@ -1,0 +1,11 @@
+import { Router } from 'express';
+import { listCourses, getCourse, enroll, getLesson, updateProgress, reviewCourse } from '../controllers/courseController.js';
+import { protect, requireActiveRole } from '../middleware/auth.js';
+const router = Router();
+router.get('/', listCourses);
+router.get('/:id', getCourse);
+router.post('/:id/enroll', protect, requireActiveRole('student'), enroll);
+router.get('/:id/lessons/:lessonId', protect, requireActiveRole('student'), getLesson);
+router.patch('/:id/lessons/:lessonId/progress', protect, requireActiveRole('student'), updateProgress);
+router.post('/:id/reviews', protect, requireActiveRole('student'), reviewCourse);
+export default router;

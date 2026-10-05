@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 700">
+<defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#062e35"/><stop offset=".55" stop-color="#087f8c"/><stop offset="1" stop-color="#20c7b0"/></linearGradient><filter id="glow"><feGaussianBlur stdDeviation="18"/></filter></defs>
+<rect width="1200" height="700" fill="url(#bg)"/><circle cx="960" cy="110" r="180" fill="#62e8d3" opacity=".12" filter="url(#glow)"/>
+<g opacity=".12" stroke="#fff"><path d="M0 100h1200M0 200h1200M0 300h1200M0 400h1200M0 500h1200M0 600h1200"/><path d="M100 0v700M300 0v700M500 0v700M700 0v700M900 0v700M1100 0v700"/></g>
+<rect x="105" y="110" width="990" height="480" rx="32" fill="#041e24" opacity=".76" stroke="#6ce5d2" stroke-opacity=".35"/>
+<rect x="155" y="165" width="300" height="55" rx="14" fill="#0b4b54"/><circle cx="188" cy="193" r="10" fill="#59dfc8"/><rect x="215" y="184" width="180" height="16" rx="8" fill="#b5efea" opacity=".7"/>
+<g fill="#9be9df"><rect x="155" y="270" width="260" height="20" rx="10"/><rect x="155" y="310" width="200" height="14" rx="7" opacity=".55"/><rect x="155" y="350" width="235" height="14" rx="7" opacity=".4"/></g>
+<g stroke="#69e6d3" stroke-width="8" fill="none" stroke-linecap="round"><path d="M520 475V270l90 70 90-120 90 65 90-105"/><path d="M520 475h360"/></g>
+<circle cx="880" cy="180" r="42" fill="#55dfc9" opacity=".16"/><text x="155" y="535" fill="#fff" font-family="Arial,sans-serif" font-size="44" font-weight="700">BUILD MODE</text><text x="155" y="575" fill="#b7dfe0" font-family="Arial,sans-serif" font-size="22">JavaScript • Web Development</text>
+</svg>
